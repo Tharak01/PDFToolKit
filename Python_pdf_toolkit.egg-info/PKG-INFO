@@ -1,3 +1,41 @@
+Metadata-Version: 2.2
+Name: Python-pdf-toolkit
+Version: 0.1.0
+Summary: A comprehensive toolkit for PDF manipulation
+Home-page: https://github.com/Tharak01/PDFToolKit
+Author: Tharakeshavan Parthasarathy
+Author-email: Ptharak01@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pypdf==5.3.0
+Requires-Dist: python-magic==0.4.27
+Requires-Dist: pandas==2.2.3
+Requires-Dist: xlsxwriter==3.2.2
+Provides-Extra: excel
+Requires-Dist: pdfplumber==0.11.5; extra == "excel"
+Provides-Extra: word
+Requires-Dist: pdf2docx==0.5.8; extra == "word"
+Provides-Extra: discord
+Requires-Dist: discord-logger-handler==0.1.2; extra == "discord"
+Provides-Extra: all
+Requires-Dist: pdfplumber==0.11.5; extra == "all"
+Requires-Dist: pdf2docx==0.5.8; extra == "all"
+Requires-Dist: discord-logger-handler==0.1.2; extra == "all"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
 # Python-Python-pdf-toolkit
 
 A comprehensive Python package for PDF manipulation including compression, conversion to Excel/Word, encryption/decryption, and merging.

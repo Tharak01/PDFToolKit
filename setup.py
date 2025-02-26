@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name="pdf-toolkit",
+    name="Python-pdf-toolkit",
     version="0.1.0",
     author="Tharakeshavan Parthasarathy",
     author_email="Ptharak01@gmail.com",
