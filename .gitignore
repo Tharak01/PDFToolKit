@@ -1,0 +1,6 @@
+test.py
+samples/
+python_pdf_toolkit.egg-info/
+dist/
+build/
+__pycache__/
