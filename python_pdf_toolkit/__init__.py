@@ -5,7 +5,7 @@ PDFToolkit provides a collection of utilities for working with PDF files,
 including compression, conversion, encryption, and merging functionality.
 """
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __author__ = "Tharakeshavn Parthasarathy"
 
 from .compressor import PDFCompressor

@@ -1,2 +1,0 @@
-[console_scripts]
-pdftoolkit = pdf_toolkit.cli:main

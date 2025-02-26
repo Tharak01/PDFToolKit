@@ -4,8 +4,8 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name="Python-pdf-toolkit",
-    version="0.1.0",
+    name="python-pdf-toolkit",
+    version="0.1.1",
     author="Tharakeshavan Parthasarathy",
     author_email="Ptharak01@gmail.com",
     description="A comprehensive toolkit for PDF manipulation",
@@ -39,7 +39,7 @@ setup(
     },
     entry_points={
         "console_scripts": [
-            "pdftoolkit=pdf_toolkit.cli:main",
+            "pdftoolkit=python_pdf_toolkit.cli:main",
         ],
     },
 )

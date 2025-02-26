@@ -1,42 +1,4 @@
-Metadata-Version: 2.2
-Name: Python-pdf-toolkit
-Version: 0.1.0
-Summary: A comprehensive toolkit for PDF manipulation
-Home-page: https://github.com/Tharak01/PDFToolKit
-Author: Tharakeshavan Parthasarathy
-Author-email: Ptharak01@gmail.com
-Classifier: Programming Language :: Python :: 3
-Classifier: License :: OSI Approved :: MIT License
-Classifier: Operating System :: OS Independent
-Requires-Python: >=3.6
-Description-Content-Type: text/markdown
-License-File: LICENSE
-Requires-Dist: pypdf==5.3.0
-Requires-Dist: python-magic==0.4.27
-Requires-Dist: pandas==2.2.3
-Requires-Dist: xlsxwriter==3.2.2
-Provides-Extra: excel
-Requires-Dist: pdfplumber==0.11.5; extra == "excel"
-Provides-Extra: word
-Requires-Dist: pdf2docx==0.5.8; extra == "word"
-Provides-Extra: discord
-Requires-Dist: discord-logger-handler==0.1.2; extra == "discord"
-Provides-Extra: all
-Requires-Dist: pdfplumber==0.11.5; extra == "all"
-Requires-Dist: pdf2docx==0.5.8; extra == "all"
-Requires-Dist: discord-logger-handler==0.1.2; extra == "all"
-Dynamic: author
-Dynamic: author-email
-Dynamic: classifier
-Dynamic: description
-Dynamic: description-content-type
-Dynamic: home-page
-Dynamic: provides-extra
-Dynamic: requires-dist
-Dynamic: requires-python
-Dynamic: summary
-
-# Python-Python-pdf-toolkit
+# python-pdf-toolkit
 
 A comprehensive Python package for PDF manipulation including compression, conversion to Excel/Word, encryption/decryption, and merging.
 
@@ -53,19 +15,19 @@ A comprehensive Python package for PDF manipulation including compression, conve
 
 ```bash
 # Basic installation
-pip install Python-pdf-toolkit
+pip install python-pdf-toolkit
 
 # With Excel conversion support
-pip install Python-pdf-toolkit[excel]
+pip install python-pdf-toolkit[excel]
 
 # With Word conversion support
-pip install Python-pdf-toolkit[word]
+pip install python-pdf-toolkit[word]
 
 # With Discord logging support
-pip install Python-pdf-toolkit[discord]
+pip install python-pdf-toolkit[discord]
 
 # With all optional dependencies
-pip install Python-pdf-toolkit[all]
+pip install python-pdf-toolkit[all]
 ```
 
 ## Usage
@@ -73,7 +35,7 @@ pip install Python-pdf-toolkit[all]
 ### Python API
 
 ```python
-from pdf_toolkit import PDFToolkit
+from python_pdf_toolkit import PDFToolkit
 
 # Initialize the toolkit
 toolkit = PDFToolkit()
@@ -123,7 +85,7 @@ decrypted_pdf = toolkit.encryptor.decrypt(
 PDFToolkit provides flexible logging options:
 
 ```python
-from pdf_toolkit.logger import setup_logger
+from python_pdf_toolkit.logger import setup_logger
 
 # Set up a standard console logger
 logger = setup_logger(
