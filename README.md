@@ -1,4 +1,4 @@
-# Python-Python-pdf-toolkit
+# Python-pdf-toolkit
 
 A comprehensive Python package for PDF manipulation including compression, conversion to Excel/Word, encryption/decryption, and merging.
 
