@@ -11,10 +11,7 @@ setup(
     description="A comprehensive toolkit for PDF manipulation",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/pdf-toolkit",
-    project_urls={
-        "Bug Tracker": "https://github.com/yourusername/pdf-toolkit/issues",
-    },
+    url="https://github.com/Tharak01/PDFToolKit",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
@@ -32,12 +29,12 @@ setup(
         "excel": ["pdfplumber==0.11.5"],
         "word": ["pdf2docx==0.5.8"],
         "discord": [
-            "discord-logger-handler==0.1.1",
+            "discord-logger-handler==0.1.2",
         ],
         "all": [
             "pdfplumber==0.11.5",
             "pdf2docx==0.5.8", 
-            "discord-logger-handler==0.1.1",
+            "discord-logger-handler==0.1.2",
         ],
     },
     entry_points={

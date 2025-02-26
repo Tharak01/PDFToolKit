@@ -9,6 +9,7 @@ A comprehensive Python package for PDF manipulation including compression, conve
 - **PDF to Word Conversion**: Convert PDFs to editable Word documents
 - **PDF Merging**: Combine multiple PDFs into a single document
 - **PDF Encryption/Decryption**: Secure your PDFs with password protection
+- **Logging Support**: Console logging and Discord webhook integration
 
 ## Installation
 
@@ -42,7 +43,7 @@ toolkit = PDFToolkit()
 # Compress a PDF
 compressed_pdf = toolkit.compressor.compress(
     "input.pdf", 
-    "compressed.pdf", 
+    "compressed.pdf",
     compression_level=7
 )
 
@@ -79,6 +80,36 @@ decrypted_pdf = toolkit.encryptor.decrypt(
 )
 ```
 
+### Logging
+
+PDFToolkit provides flexible logging options:
+
+```python
+from pdf_toolkit.logger import setup_logger
+
+# Set up a standard console logger
+logger = setup_logger(
+    name="MyPDFApp",
+    level="INFO"  # Available levels: DEBUG, INFO, WARNING, ERROR, CRITICAL
+)
+
+# Log messages
+logger.info("Starting PDF processing")
+logger.warning("Low disk space for output file")
+logger.error("Failed to process PDF file")
+
+# Set up Discord webhook logging (requires discord-logger-handler package)
+discord_logger = setup_logger(
+    name="MyPDFApp",
+    level="INFO",
+    discord_webhook="https://discord.com/api/webhooks/your_webhook_url"
+)
+
+# Log messages with additional context
+discord_logger.info("PDF processed successfully", file_name="example.pdf", pages=5)
+discord_logger.error("Processing failed", error_code=500, file_path="/path/to/file.pdf")
+```
+
 ### Command Line Interface
 
 ```bash
@@ -105,7 +136,7 @@ pdftoolkit decrypt encrypted.pdf decrypted.pdf --password your_password
 
 - `pdfplumber`: Required for PDF to Excel conversion
 - `pdf2docx`: Required for PDF to Word conversion
-- `requests`: Required for Discord logging integration
+- `discord-logger-handler`: Required for Discord logging integration
 
 ## Contributing
 
